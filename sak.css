@@ -1,0 +1,78 @@
+body
+{
+	background-color: lightbrown;
+        
+}
+
+#background
+{
+	margin:90px;
+	background-color: lightyellow;
+}
+
+.a
+{
+	font-size:10px;
+	padding:5px;
+	text-align:right;
+}
+
+#StudentDivDis
+{
+  	border : solid 2px;
+ 	padding: 10px;
+ 	text-align: center;
+}
+
+#DisplayInsDelUpdate
+{
+ 	border : solid 1px;
+  	padding: 10px;
+  	text-align: center;
+}
+
+#StudentDivIns
+{
+  	border : solid 1px;
+  	padding: 10px;
+  	text-align: center;
+}
+
+#StudentDivDel
+{
+  	border : solid 1px;
+  	padding: 10px;
+  	text-align: center;
+}
+
+#StudentDivUpdate
+{
+  	border : solid 1px;
+  	padding: 10px;
+  	text-align: center;
+}
+
+#StudentUpdateFill
+{
+	border : solid 1px;
+	padding: 10px;
+	text-align: center;
+}
+
+#Menu
+{	text-align: center;}
+
+button
+{
+	padding:7px;
+}
+
+#header1
+{
+	text-align:center;
+}
+
+footer
+{
+	text-align:right;
+}

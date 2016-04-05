@@ -1,0 +1,116 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="sak.css">
+	<script src="StudentData.json"></script>
+	<script src="Assignment.js"></script>
+
+<style>
+h1 {
+    color: black;
+    text-shadow: 3px 1px 2px white, 0 0 35px lightgrey, 0 0 9px blue;
+}
+</style>
+
+</head>
+	
+<body style="background-color: yellow;" >
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#Display007").toggle();
+    });
+});
+</script><br>
+
+<div id="background"><div id="header_2" style="background-color:lightblue">
+		
+                <header id="header1"><h1><center><span style="color:brown"><strong>Student Details <span class="glyphicon glyphicon-folder-open"></span></strong></span></center></h1>
+			<button type="button"  id="Display007"  onclick="StudentInfo()" >Display Record </button><br>
+
+		</header></div>
+	
+		
+	<div id="StudentDivDis"><br>
+	</div>
+		
+	<div style="width:200px; float:left; background-color: lightblue;" id="DisplayInsDelUpdate"><br>	
+	
+		<div id="StudentDivIns">
+
+			<header class="a">Add Details Here
+			</header>
+
+			<input type="text" name="newFirstName" id="newFirstNameId" placeholder="FirstName" title="First Name Plz!">
+			
+			<input type="text" name="newLastName" id="newLastNameId" placeholder="LastName"title="Last Name Plz!">
+			
+			<input type="number" name="newRollNo" id="newRollNoId" placeholder="RollNo" title="RollNo Plz!">
+			
+			<input type="text" name="newSubjectName" id="newSubjectName" placeholder="SubjectName"	title="subject Plz!">
+
+			<input type="button" onclick="addStudentInfo()" value="Add"  title="Click For Add!">
+
+		</div>
+		
+	
+		<div id="StudentDivDel">
+		
+			<header class="a">Delete Details Here
+			</header>
+		
+			<input type="text" name="FirstName" id="deleteByName" placeholder="Enter First Name To Delete"  title="First Name Plz!">
+			
+			<input type="button" onclick="deleteStudentInfo()" value="Delete"  title="Click For Delete!">
+		
+		</div>
+		
+	
+		<div id="StudentDivUpdate">
+		
+			<header class="a">Update Details here
+			</header>
+			
+			<input type="text" name="FirstName" id="UpdateByName" placeholder="Enter First Name To Update"  title="First Name Plz!">
+			
+			<input type="button" id="UpdateButton" onclick="updateStudentInfo()" value="Update"  title="Click For Update!">
+	
+		</div>
+		
+	
+		<div id="StudentUpdateFill">
+		
+			<header class="a">Please Add new details for update	</header>title="First Name Plz!">
+			
+			<input type="text" name="LastName" id="UpdateLastName" placeholder="LastName" title="Last Name Plz!">
+				<input type="number" name="RollNo" id="UpdateRollNo" placeholder="RollNo"  title="RollNo Plz!">
+
+			<input type="text" name="SubjectName" id="UpdateSubjectName" placeholder="SubjectName"	title="Subject Plz!">
+			
+			<input type="button" onclick="updateStudentTable()" value="Update" title="Click For Update!">
+
+		</div>
+
+	</div>
+
+	</div>
+<div id="Menu" style="margin-left:700px; border-style: solid; border-color: red; background-color: lightblue"><h1>SELECT OPTIONS: </h1> 
+
+			<button type="button" style="margin-left:500px" id="Add1"  title="Click For Add Record..">Add Record </button><br>
+			<button type="button" style="margin-left:500px" id="Delete1" title="Click For Delete Record..">Delete Record</button><br>
+			<button type="button" style="margin-left:500px" id="update1" title="Click For Update Record..">Update Record</button><br>
+
+	
+	</div>
+
+</div> <!--Background div>
+
+
+</body>
+</html>
